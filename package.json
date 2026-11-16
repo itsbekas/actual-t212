@@ -1,25 +1,26 @@
 {
-  "name": "actual-t212-importer",
+  "name": "actual-t212",
   "version": "1.0.0",
-  "description": "Transaction importer from Trading212 to Actual Budget.",
-  "homepage": "https://github.com/itsbekas/actual-trading212-importer#readme",
+  "description": "Fetch Trading212 transactions in Actual Budget format.",
+  "homepage": "https://github.com/itsbekas/actual-t212#readme",
   "bugs": {
-    "url": "https://github.com/itsbekas/actual-trading212-importer/issues"
+    "url": "https://github.com/itsbekas/actual-t212/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itsbekas/actual-trading212-importer.git"
+    "url": "git+https://github.com/itsbekas/actual-t212.git"
   },
   "license": "ISC",
   "author": "Bernardo Jordão",
   "type": "module",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
   "scripts": {
-    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@actual-app/api": "^26.7.0",
     "axios": "^1.10.0",
     "csv-parse": "^6.0.0",
     "dayjs": "^1.11.18"
